@@ -84,6 +84,7 @@ namespace Zeepkist.Unlock
             }
 
             Debug.Log("All cosmetics now unlocked!");
+            PlayerManager.Instance.messenger.Log("All cosmetics unlocked!", 3.0f);
         }
 
         private void UnlockLevels_SettingChanged(object sender, EventArgs e)
@@ -121,6 +122,7 @@ namespace Zeepkist.Unlock
             }
 
             Debug.Log("All adventure levels unlocked!");
+            PlayerManager.Instance.messenger.Log("All levels unlocked!", 3.0f);
         }
 
         public void OnDestroy()
